@@ -1,0 +1,64 @@
+html, body {
+    height: 100%; /* Výška stránky je 100 % */
+    margin: 0; /* Odstranění výchozích okrajů */
+    font-family: 'Arial', sans-serif; /* Moderní písmo */
+    background: linear-gradient(135deg, #1E90FF, #FF69B4); /* Stylové gradientní pozadí */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex; /* Flexbox pro zarovnání obsahu */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Šířka kontejneru */
+    height: 100vh; /* Zajistí, že každá sekce zabere celou výšku obrazovky */
+}
+
+.hidden {
+    display: none; /* Skryje sekce, které nejsou aktivní */
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Poloprůhledné bílé pozadí */
+    color: #333;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: #FF69B4;
+    transform: scale(1.05);
+}
+
+.box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #1E90FF;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.box input:focus {
+    border-color: #FF69B4;
+}
